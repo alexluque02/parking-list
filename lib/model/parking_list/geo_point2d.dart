@@ -7,8 +7,8 @@ class GeoPoint2d {
   GeoPoint2d({this.lon, this.lat});
 
   factory GeoPoint2d.fromMap(Map<String, dynamic> data) => GeoPoint2d(
-        lon: (data['lon'] as num?)?.toDouble(),
-        lat: (data['lat'] as num?)?.toDouble(),
+        lon: (data['lon'] as double?)?.toDouble(),
+        lat: (data['lat'] as double?)?.toDouble(),
       );
 
   Map<String, dynamic> toMap() => {
